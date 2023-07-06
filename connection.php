@@ -44,10 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Save the user data to the database (you need to establish a database connection first)
         try {
-            $pdo = new PDO("mysql:host=localhost;dbname=users;charset=utf8", 'root', '');
+            $pdo = new PDO("mysql:host=sql6.freemysqlhosting.net;dbname=sql6631029;charset=utf8", 'sql6631029', '6kQ5lHTI2l');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $query = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+            $query = "INSERT INTO sql6631029 (username, email, password) VALUES (?, ?, ?)";
             $stmt = $pdo->prepare($query);
             $stmt->execute([$username, $email, $password]);
 
@@ -68,10 +68,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Retrieve the user data from the database (you need to establish a database connection first)
         try {
-            $pdo = new PDO("mysql:host=localhost;dbname=users;charset=utf8", 'root', '');
+            $pdo = new PDO("mysql:host=sql6.freemysqlhosting.net;dbname=sql6631029;charset=utf8", 'sql6631029', '6kQ5lHTI2l');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $query = "SELECT * FROM users WHERE username = ? AND password = ?";
+            $query = "SELECT * FROM sql6631029 WHERE username = ? AND password = ?";
             $stmt = $pdo->prepare($query);
             $stmt->execute([$username, $password]);
             $user = $stmt->fetch();

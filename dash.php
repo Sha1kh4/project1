@@ -10,10 +10,10 @@ if (!isset($_SESSION['useridlogin'])) {
 
 // Retrieve the user's status from the database
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=users;charset=utf8", 'root', '');
+    $pdo = new PDO("mysql:host=sql6.freemysqlhosting.net;dbname=sql6631029;charset=utf8", 'sql6631029', '6kQ5lHTI2l');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $query = "SELECT status FROM users WHERE username = ?";
+    $query = "SELECT status FROM sql6631029 WHERE username = ?";
     $stmt = $pdo->prepare($query);
     $stmt->execute([$_SESSION['useridlogin']]);
     $user = $stmt->fetch();
@@ -116,10 +116,10 @@ if (isset($_SESSION['useridlogin'])) {
         <div id="data-table" style="display: none;">
             <?php
             // Database configuration
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname1 = "users";
+            $servername = "sql6.freemysqlhosting.net";
+            $username = "sql6631029";
+            $password = "6kQ5lHTI2l";
+            $dbname1 = "sql6631029";
 
             // Create connections
             $conn1 = new mysqli($servername, $username, $password, $dbname1);

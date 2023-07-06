@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "sql6.freemysqlhosting.net";
+$username = "sql6631029";
+$password = "6kQ5lHTI2l";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

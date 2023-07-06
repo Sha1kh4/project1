@@ -1,9 +1,9 @@
 <?php
 // Update the following variables with your database credentials
-$host = 'localhost';
-$dbname = 'users';
-$username = 'root';
-$password = '';
+$host = 'sql6.freemysqlhosting.net';
+$dbname = 'sql6631029';
+$username = 'sql6631029';
+$password = '6kQ5lHTI2l';
 
 $isSubmitted = false; // Initialize the flag variable
 

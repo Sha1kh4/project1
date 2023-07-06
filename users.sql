@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `users`
+-- Database: `sql6631029`
 --
-CREATE DATABASE IF NOT EXISTS `users` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_cs;
-USE `users`;
+CREATE DATABASE IF NOT EXISTS `sql6631029` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_cs;
+USE `sql6631029`;
 
 -- --------------------------------------------------------
 
@@ -53,10 +53,10 @@ CREATE TABLE `inputs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `sql6631029`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `sql6631029` (
   `id` int(11) NOT NULL,
   `username` varchar(255) COLLATE latin1_general_cs NOT NULL,
   `email` varchar(255) COLLATE latin1_general_cs NOT NULL,
@@ -81,9 +81,9 @@ ALTER TABLE `inputs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indexes for table `sql6631029`
 --
-ALTER TABLE `users`
+ALTER TABLE `sql6631029`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -103,9 +103,9 @@ ALTER TABLE `inputs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `sql6631029`
 --
-ALTER TABLE `users`
+ALTER TABLE `sql6631029`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
