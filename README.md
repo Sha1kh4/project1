@@ -1,2 +1,2 @@
 # project1
-This is the actual php code and connot be hosted on github pages as it does not allow non static websites
+link to the deploymen on infinityfree server http://skad.000.pe/
